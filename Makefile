@@ -114,7 +114,6 @@ clean:
 	$(RM) -r "./$(OBJ)"
 
 cleanall: clean
-	$(RM) "./$(APP)"
 	$(RM) -r "./$(BIN)"
 
 	
