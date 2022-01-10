@@ -41,9 +41,11 @@ OBJ     := obj
 INC     := include
 BIN     := bin
 # add another include dirs
+# example -IC:\lib\SDL2\include\                              
 INCDIRS := -Iinclude
 # add the libraries 
 # SDL2 = -lmingw32 -lSDL2main -lSDL2
+# or  -LC:\lib\SDL2\lib\ -lmingw32 -lSDL2main -lSDL2
 LIBS    :=
 
 ifeq ($(UNAME),Linux)
