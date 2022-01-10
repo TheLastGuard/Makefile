@@ -23,6 +23,8 @@ define C2H
 $(patsubst %.c,%.h,$(patsubst %.cpp,%.hpp,$(patsubst $(SRC)%,$(INC)%,$(1))))
 endef
 
+# for .c use .h for .cpp use .hpp
+
 ###########################################
 ### CONFIG
 ###########################################
