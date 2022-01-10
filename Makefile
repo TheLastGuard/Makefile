@@ -74,7 +74,7 @@ endif
 
 # find is a linux command if you are in windows you can download msys2 
 # and add to the path "C:\msys64\usr\bin  (this is the defauld path)" 
-# and rename the exeutable find.exe to findg.exe to avoid problems with the Windows find command
+# and rename the executable find.exe of msys to findg.exe to avoid problems with the Windows find command
 # also rename this MACROS
 ALLCPPS    := $(shell find src/ -type f  -iname *.cpp)
 ALLCS      := $(shell find src/ -type f  -iname *.c)
@@ -84,7 +84,7 @@ OBJSUBDIRS := $(patsubst $(SRC)%,$(OBJ)%,$(SUBDIRS))
 
 .PHONY: info
 
-# Generate Library
+# Generate Executable
 $(APP) : $(OBJSUBDIRS) $(ALLOBJ) $(BIN)
 	$(CC) $(ALLOBJ) -o $(APP) $(CCFLAGS) $(INCDIRS) $(LIBS)
 
