@@ -1,0 +1,1 @@
+* this is a relatively universal Makefile there are some things to take into account and modify depending on the project there are several comments that might help 
